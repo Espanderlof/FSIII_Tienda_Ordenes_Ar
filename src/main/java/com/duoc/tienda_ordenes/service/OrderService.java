@@ -4,7 +4,6 @@ import com.duoc.tienda_ordenes.model.Order;
 import com.duoc.tienda_ordenes.model.OrderItem;
 import com.duoc.tienda_ordenes.repository.OrderRepository;
 import com.duoc.tienda_ordenes.dto.OrderDTO;
-import com.duoc.tienda_ordenes.dto.OrderItemDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
