@@ -7,3 +7,7 @@ mvn spring-boot:run
 # Levantar contenedor Docker
 docker build -t tienda_ordenes_backend .
 docker run --name tienda_ordenes_backend -p 8083:8083 tienda_ordenes_backend
+
+# Ejecuta los tests con JaCoCo
+mvn clean test
+mvn jacoco:report
