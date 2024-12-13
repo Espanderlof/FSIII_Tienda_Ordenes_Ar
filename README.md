@@ -12,6 +12,10 @@ docker run --name tienda_ordenes_backend -p 8083:8083 tienda_ordenes_backend
 mvn clean test
 mvn jacoco:report
 
+# Comando SonarQube
+# Modificar por comando que da la generacion del proyecto en SonarQube
+mvn clean verify sonar:sonar "-Dsonar.projectKey=FSIII_TIENDA_ORDENES" "-Dsonar.projectName=FSIII_TIENDA_ORDENES" "-Dsonar.host.url=http://localhost:9000" "-Dsonar.token=sqp_6c8085d7989a19d3b22dcb257d9808821b2968cd"
+
 # DockerHub
 1. Crear repo en https://hub.docker.com/
 2. Primero, asegúrate de estar logueado en Docker Hub desde tu terminal
